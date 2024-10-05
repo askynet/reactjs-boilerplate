@@ -15,7 +15,7 @@ export const Navbar: React.FC = () => {
     const headerStyles: React.CSSProperties = {
         backgroundColor: token.colorBgElevated,
         display: "flex",
-        justifyContent: "flex-end",
+        justifyContent: "space-between",
         alignItems: "center",
         padding: "0px 24px",
         height: "54px",
@@ -30,6 +30,7 @@ export const Navbar: React.FC = () => {
 
     return (
         <Layout.Header style={headerStyles}>
+            <Title />
             <Space align="center" size="middle">
                 <Button type="primary" onClick={goToLogin}>Login</Button>
             </Space>
